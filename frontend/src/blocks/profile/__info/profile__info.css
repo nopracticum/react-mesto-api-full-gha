@@ -1,0 +1,16 @@
+.profile__info {
+    padding-left: 30px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-areas:
+    'title editButton'
+    'subtitle subtitle';
+}
+
+@media screen and (max-width: 540px) {
+    .profile__info {
+        justify-content: center;
+        padding: 0;
+    }
+}

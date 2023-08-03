@@ -1,0 +1,27 @@
+.header__link {
+	color: white;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	cursor: pointer;
+	text-decoration: none;
+	background-color: inherit;
+	border: 0;
+}
+
+.header__link:hover {
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 1023px) {
+	.header__link {
+		padding-right: 27px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.header__link {
+		font-size: 14px;
+		padding-right: 0;
+	}
+}

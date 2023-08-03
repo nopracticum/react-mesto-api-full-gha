@@ -1,0 +1,12 @@
+.burger-menu {
+	display: none;
+	flex-direction: column;
+	gap: 6px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+	.burger-menu {
+		display: flex;
+	}
+}

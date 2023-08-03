@@ -1,0 +1,14 @@
+.signup__input {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	max-width: 358px;
+	height: 48px;
+	box-sizing: border-box;
+	color: #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background-color: black;
+}

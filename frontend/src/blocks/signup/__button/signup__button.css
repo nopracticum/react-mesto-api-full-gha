@@ -1,0 +1,25 @@
+.signup__button {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	min-height: 50px;
+	margin-top: 200px;
+	border: 0;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	border-radius: 2px;
+	width: 100%;
+}
+
+.signup__button:hover {
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 425px) {
+	.signup__button {
+		margin-top: 173px;
+	}
+}

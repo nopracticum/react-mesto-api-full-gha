@@ -1,0 +1,16 @@
+.signup__question {
+	margin: 0;
+	padding-top: 15px;
+	color: white;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+	.signup__question {
+		padding-top: 0;
+	}
+}
