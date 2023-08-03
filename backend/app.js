@@ -9,15 +9,13 @@ const router = require('./routes/index');
 const error = require('./middlewares/error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT, DB_PORT } = process.env;
+const { PORT = 3000 } = process.env;
 
 const app = express();
 
-mongoose.connect(DB_PORT)
-  // eslint-disable-next-line no-console
-  .then(() => console.log('Проверка данных'))
-  // eslint-disable-next-line no-console
-  .catch((err) => console.error('Ошибка подключения', err));
+mongoose.connect('mongodb://127.0.0.1:27017/mestodb')
+// eslint-disable-next-line no-console
+  .then(() => console.log('MongoDB active'));
 
 app.use(helmet());
 app.use(cors());
