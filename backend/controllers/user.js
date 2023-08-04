@@ -25,7 +25,7 @@ const login = (req, res, next) => {
 
       const token = jwt.sign(
         { _id: dataBaseUser._id },
-        NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
+        NODE_ENV === 'production' ? JWT_SECRET : 'super-strong-key',
         { expiresIn: '7d' },
       );
       // eslint-disable-next-line no-console
